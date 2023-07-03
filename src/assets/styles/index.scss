@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    font-family : 'Raleway', sans-serif ;
+}
+
+@import './navbar';
+@import './banner';
+@import './home'
+

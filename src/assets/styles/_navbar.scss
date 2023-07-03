@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.navbar img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: #ff6060;
+    font-size: 20px;
+}
+
+.navbarChoice {
+    justify-content: space-between;
+}
+
+// .navbarLink {
+//     color: #FF6060;
+//     font-weight: 500;
+//     margin-left: 50px;
+//     font-size: 17px;
+// }
+
