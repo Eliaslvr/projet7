@@ -6,7 +6,14 @@
     font-family : 'Raleway', sans-serif ;
 }
 
+
+
 @import './navbar';
 @import './banner';
-@import './main'
+@import './main';
+@import './footer';
 
+footer {
+    margin: 0;
+    background-color: red;
+}

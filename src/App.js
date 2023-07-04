@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner'
 import Main from "./components/Main/Main";
 import Propos from "./components/Propos/Propos";
 import Pages from "./components/Pages/Pages";
+import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import './assets/styles/index.scss'
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/pages" element={<Pages />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
