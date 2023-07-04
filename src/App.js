@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner' 
-import Home from './components/Home/Home'
+import Main from "./components/Main/Main";
 import Propos from "./components/Propos/Propos";
 import Pages from "./components/Pages/Pages";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Banner />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/propos" element={<Propos />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="*" element={<ErrorPage />} />
