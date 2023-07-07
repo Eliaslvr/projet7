@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import element from '../../element.json'
 
 const Main = () => {
+
     return (
         <div className='appartement'>
             { element.map( appartements => {
                     return(
-                        <Link to='/pages'>
+                        <Link to={`/pages/${appartements.id}`}>
                         <div className='box' key={appartements.id}>
                             <img src={ appartements.cover} alt={ appartements.title }/>
                             <p className='textBox'>{ appartements.title }</p>

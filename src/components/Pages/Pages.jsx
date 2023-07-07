@@ -1,9 +1,13 @@
 import React from 'react';
 import element from '../../element.json'
-
-console.log(element);
+import { useLocation } from 'react-router-dom';
 
 const Pages = () => {
+
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const id = searchParams.get('id');
+    console.log(id)
     return (
         <div>
             <div className='information'>

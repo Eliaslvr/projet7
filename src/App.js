@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/propos" element={<Propos />} />
-        <Route path="/pages" element={<Pages />} />
+        <Route path="/pages/:id" element={<Pages />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
