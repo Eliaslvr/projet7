@@ -12,8 +12,6 @@
 @import './banner';
 @import './main';
 @import './footer';
-
-footer {
-    margin: 0;
-    background-color: red;
-}
+@import './propos';
+@import './errorPage';
+@import './pages';
