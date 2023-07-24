@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import element from '../../element.json'
+import Banner from '../Banner/Banner';
 
 const Main = () => {
-
+    
     return (
+        <div>
+            <Banner/>
         <div className='appartement'>
             { element.map( appartements => {
                     return(
@@ -18,23 +21,9 @@ const Main = () => {
                 })
             }
         </div>
+        </div>
     );
 };
 
 export default Main;
-
-// const Main = () => {
-//     return (
-//         <div>
-//             <div className='appartement'>
-//                 <Link to='/pages'>
-//                     <img src='' alt='' />images
-//                     <p></p>
-//                 </Link>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Main;
 

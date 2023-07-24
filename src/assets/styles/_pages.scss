@@ -38,10 +38,15 @@
     border-radius: 12px;
 }
 
+.flex {
+    display: flex;
+}
+
 .namePerson {
     font-size: 20px;
     font-weight: 500;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .nameDescription {
@@ -50,6 +55,7 @@
     border-radius: 5px;
     font-size: 24px;
     font-weight: 600;
+    margin: 0;
     margin-top: 25px;
     padding: 10px;
     display: flex;
@@ -68,6 +74,17 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+}
+
+.person {
+    display: flex;
+    margin-top: 25px;
+    width: 156px;
+}
+
+.pictureProfil {
+    border-radius: 70px;
+    height: 67px;
 }
 
 .width {
