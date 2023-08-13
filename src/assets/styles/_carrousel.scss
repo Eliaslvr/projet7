@@ -1,4 +1,36 @@
 .img {
-    height: 250px;
+    height: 400px;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-container {
+    margin-top: -20px;
     width: 100%;
 }
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 90px;
+}
+
+  
+.carousel-arrow-right {
+    right: 0;
+}
+
+.carousel-arrow-left {
+    left: 30px;
+}
+
+

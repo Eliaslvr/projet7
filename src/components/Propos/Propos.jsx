@@ -5,7 +5,7 @@ const Propos = () => {
     const [count, setCount] = useState(false)
 
     const handleClick = function (e) {
-        e.preventDefault()
+        // e.preventDefault()
         setCount(!count)
     }
 
@@ -32,7 +32,7 @@ const Propos = () => {
 
     return <>
         <div>
-            <div onClick={handleClick} className='propos'>
+            <div onClick={handleClick} className={`propos ${count ? 'rotate-icon' : ''} ${count ? 'scale-up-ver-top' : ''}`}>
                 <p>Fiabilité</p>
                 <i className="fas fa-chevron-up" />
             </div>

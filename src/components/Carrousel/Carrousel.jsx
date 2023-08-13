@@ -31,23 +31,23 @@ const Carrousel = () => {
         setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
     }
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
+    // const settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    //   };
 
     return (
-        <div {...settings}>
+        // <div {...settings}>
+        <div className='carousel settings'>
             <div className='carousel-container'>
                 <img className='img' src={image[currentSlide]} alt={`Slide ${currentSlide}`} />
-                <p>Legend 1</p>
             </div>
             <div className='carousel-buttons'>
-                <button onClick={goToPrevSlide}>Précédent</button>
-                <button onClick={goToNextSlide}>Suivant</button>
+                <i class="carousel-arrow-left fas fa-chevron-left" onClick={goToPrevSlide}></i>
+                <i class="carousel-arrow-right fas fa-chevron-right" onClick={goToNextSlide}></i>
             </div>
         </div>
     );

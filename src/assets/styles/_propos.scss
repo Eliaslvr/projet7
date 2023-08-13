@@ -34,3 +34,16 @@
   transform: rotate(180deg);
 }
 
+.clickPropos .scale-up-ver-top {
+    -webkit-animation: scale-up-ver-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.rotate-icon i {
+    transition: transform 0.3s ease; /* Ajoutez une transition pour une rotation en douceur */
+  }
+  
+  .rotate-icon:hover i {
+    transform: rotate(180deg); /* Applique une rotation de 180 degrés à l'icône */
+  }
+
