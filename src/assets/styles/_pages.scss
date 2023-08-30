@@ -6,6 +6,8 @@
     color: #ff6060;
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .nameHome {
@@ -73,7 +75,8 @@
 .info {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .person {
@@ -89,4 +92,50 @@
 
 .width {
     width: 47%;
+}
+
+@media only screen and (max-width: 860px) {
+    .information {
+        flex-direction: column;
+    }
+    
+    .nameHome {
+        font-size: 21px;
+    }
+
+    .localisation {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .background {
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .namePerson {
+        font-size: 14px;
+    }
+
+    .person {
+        width: auto;
+        margin-top: auto;
+    }
+
+    .info {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .width {
+        width: 100%;
+    }
+
+    .nameDescription {
+        font-size: 14px;
+    }
+
+    .infoDescription {
+        font-size: 14px;
+    }
 }

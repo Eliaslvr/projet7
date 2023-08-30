@@ -1,12 +1,18 @@
 .banner {
     position: relative;
     margin-top: -20px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .banner img {
     width: 100%;
     height: 220px;
-    //object-fit: contain;
+    filter: brightness(50%);
+    border-radius: 30px;
+    object-fit: none;
 }
 
 .bannerText {
@@ -15,12 +21,25 @@
     left: 50%;
     margin: auto;
     place-items: center;
-    color: #ff6060;
+    color: white;
     font-size: 50px;
     font-weight: bold;
     transform: translate(-50%, -50%);
     z-index: 1;
-    white-space: nowrap;
+    // white-space: nowrap;
+    width: 90%;
+    display: inline-grid;
+}
+
+@media only screen and (max-width: 860px) {
+    .banner img {
+        height: 130px;
+        border-radius: 15px;
+    }
+
+    .bannerText {
+        font-size: 27px;
+    }
 }
 
 // .banner {

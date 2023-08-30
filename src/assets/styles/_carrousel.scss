@@ -10,8 +10,8 @@
 }
 
 .carousel-container {
-    margin-top: -20px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .carousel-arrow-left,
@@ -26,11 +26,24 @@
 
   
 .carousel-arrow-right {
-    right: 0;
+    right: 70px;
 }
 
 .carousel-arrow-left {
-    left: 30px;
+    left: 70px;
 }
 
+@media only screen and (max-width: 860px) {
+    .img {
+        height: 300px;
+    }
+
+    .carousel-arrow-left {
+        font-size: 30px;
+    }
+
+    .carousel-arrow-right {
+        font-size: 30px;
+    }
+}
 

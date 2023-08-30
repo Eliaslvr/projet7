@@ -1,6 +1,8 @@
 .errorContainer {
     color: #ff6060;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .errorText {
@@ -15,4 +17,20 @@
 
 .errorLinkHome {
     color: #ff6060;
+}
+
+@media only screen and (max-width: 860px) {
+    .errorNumber {
+        font-size: 100px;
+    }
+
+    .errorText {
+        font-size: 19px;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    .errorLinkHome {
+        margin-bottom: 15px;
+    }
 }

@@ -1,6 +1,24 @@
+.image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image img {
+  width: 100%;
+  height: 220px;
+  filter: brightness(50%);
+  border-radius: 30px;
+  object-fit: none;
+}
+
+.affiche {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .propos {
     background-color: #ff6060;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -16,7 +34,7 @@
 
 .clickPropos {
     background-color: #f7f7f7;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     color: #ff6060;
@@ -45,5 +63,22 @@
   
   .rotate-icon:hover i {
     transform: rotate(180deg); /* Applique une rotation de 180 degrés à l'icône */
+  }
+
+  @media only screen and (max-width: 860px) {
+    .propos {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .clickPropos {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    // .affiche {
+    //   padding-bottom: 18px;
+    // }
   }
 

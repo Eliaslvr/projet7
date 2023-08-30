@@ -1,8 +1,9 @@
 .navbar {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 400;
+    margin: 0 auto;
 }
 
 .navbar img {
@@ -19,6 +20,17 @@
 
 .navbarChoice {
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 860px) {
+    .navbar img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .navbarLink {
+        font-size: 15px;
+    }
 }
 
 // .navbarLink {
